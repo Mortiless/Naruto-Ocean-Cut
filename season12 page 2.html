@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Naruto The Ocean Cut Season 12 page 2</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('../backgrounds/season-select-bg-3.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .season-grid {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 70px;
+    }
+
+    .season-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .season-item .episode-label-img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .season-item button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .season-item button img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #f5c6b7;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .season-item button img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-buttons {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .nav-buttons img {
+      width: 180px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .nav-buttons img:hover {
+      transform: translateY(-6px);
+      filter: brightness(1.2);
+    }
+
+    .back-home {
+      width: 175px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Season Buttons -->
+  <div class="season-grid">
+    <div class="season-item">
+      <img src="../episode number/episode 66.png" alt="Episode 66" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode66.html'">
+        <img src="../Covers/cover 66.PNG" alt="Episode 66 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 67.png" alt="Episode 67" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode67.html'">
+        <img src="../Covers/cover 67.PNG" alt="Episode 67 Thumbnail">
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <img src="../btn/kunai-left.png" alt="Previous Page" onclick="goPrevPage()">
+    <img src="../btn/leaf-symbol.png" alt="Main Menu" class="back-home" onclick="location.href='../season pages/season-page-3.html'">
+    <img src="../btn/kunai-right.png" alt="Next Page" onclick="goNextPage()">
+  </div>
+
+
+  <script>
+    function goPrevPage() {
+      
+      window.location.href = 'season12 page 1.html';
+    }
+
+    function goNextPage() {
+      
+      window.location.href = 'season12 page 1.html';
+    }
+  </script>
+
+</body>
+</html>
+

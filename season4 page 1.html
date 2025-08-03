@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Naruto The Ocean Cut Season 4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('../backgrounds/season-select-bg.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .season-grid {
+      position: absolute;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 70px;
+    }
+
+    .season-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .season-item .episode-label-img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .season-item button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .season-item button img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border: 4px solid #fd5534;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .season-item button img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-buttons {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .nav-buttons img {
+      width: 180px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .nav-buttons img:hover {
+      transform: translateY(-6px);
+      filter: brightness(1.2);
+    }
+
+    .back-home {
+      width: 175px;
+      height: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Season Buttons -->
+  <div class="season-grid">
+    <div class="season-item">
+      <img src="../episode number/episode 24.png" alt="Episode 24" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode24.html'">
+        <img src="../Covers/cover 24.PNG" alt="Episode 24 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 25.png" alt="Episode 25" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode25.html'">
+        <img src="../Covers/cover 25.PNG" alt="Episode 25 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 26.png" alt="Episode 26" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode26.html'">
+        <img src="../Covers/cover 26.PNG" alt="Episode 26 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 27.png" alt="Episode 27" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode27.html'">
+        <img src="../Covers/cover 27.PNG" alt="Episode 27 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 28.png" alt="Episode 28" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode28.html'">
+        <img src="../Covers/cover 28.PNG" alt="Episode 28 Thumbnail">
+      </button>
+    </div>
+
+    <div class="season-item">
+      <img src="../episode number/episode 29.png" alt="Episode 29" class="episode-label-img">
+      <button onclick="location.href='../episode html/episode29.html'">
+        <img src="../Covers/cover 29.PNG" alt="Episode 29 Thumbnail">
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <img src="../btn/kunai-left.png" alt="Previous Page" onclick="goPrevPage()">
+    <img src="../btn/leaf-symbol.png" alt="Main Menu" class="back-home" onclick="location.href='../season pages/season-page-1.html'">
+    <img src="../btn/kunai-right.png" alt="Next Page" onclick="goNextPage()">
+  </div>
+
+
+  <script>
+    function goPrevPage() {
+      
+      window.location.href = 'season4 page 2.html';
+    }
+
+    function goNextPage() {
+      
+      window.location.href = 'season4 page 2.html';
+    }
+  </script>
+
+</body>
+</html>
+
